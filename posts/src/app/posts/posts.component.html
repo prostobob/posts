@@ -1,0 +1,6 @@
+<div class="container" *ngFor="let item of posts">
+  <div class="content">
+    <div>{{ item.title }}</div>
+    <div><a class="detail" [routerLink]="['/posts', item.id]">Detail</a></div>
+  </div>
+</div>
